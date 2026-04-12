@@ -396,6 +396,104 @@
 }
 
 /* =========================================
+   PERSONALIZZAZIONE GISCUS (Tema Vanilla-Caramello)
+   ========================================= */
+
+/* 1. IL CONTENITORE DELLA SEZIONE COMMENTI */
+.comments-section {
+    background-color: #F9F7F2; /* Vanilla un po' più scuro per staccarsi dal bianco */
+    border: 1px solid #E8E2D9; /* Bordo sabbia */
+    border-radius: 24px;
+    padding: 40px;
+    margin-top: 60px;
+    /* Ombra morbida */
+    box-shadow: 0 10px 30px rgba(74, 64, 54, 0.05);
+}
+
+/* 2. IL TITOLO "Commenti" */
+.comments-section h3 {
+    text-align: center;
+    margin: 0 0 30px 0;
+    color: var(--colore-principale); /* Caramello */
+    font-size: 2rem;
+}
+
+/* 3. LA BARRA SUPERIORE DI GISCUS */
+.gsc-header {
+    border-bottom: 1px solid var(--colore-bordo) !important;
+    padding-bottom: 15px !important;
+    background-color: transparent !important;
+}
+
+/* Il testo "Discussioni" o "Comments" */
+.gsc-header .gsc-header-title {
+    color: var(--text-color) !important;
+    font-weight: 700 !important;
+    font-size: 1rem !important;
+}
+
+/* 4. LA BARRA DI INPUT (Dove si scrive) */
+.gsc-input-box {
+    background-color: #ffffff !important;
+    border: 2px solid var(--colore-bordo) !important;
+    border-radius: 12px !important;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.02) !important;
+    transition: border-color 0.3s ease !important;
+}
+
+.gsc-input-box:focus-within {
+    border-color: var(--colore-principale) !important;
+    background-color: #fff !important;
+}
+
+/* 5. I BOTTONI (Login, Commenta, Cancella) */
+.gsc-button {
+    border-radius: 50px !important;
+    font-weight: 600 !important;
+    transition: all 0.3s ease !important;
+}
+
+/* Bottone Invia (Primary) */
+.gsc-submit {
+    background-color: var(--text-color) !important; /* Marrone scuro */
+    color: #fff !important;
+}
+
+.gsc-submit:hover {
+    background-color: var(--colore-principale) !important; /* Caramello */
+    transform: translateY(-2px) !important;
+}
+
+/* Bottone Cancella (Secondary) */
+.gsc-cancel {
+    background-color: transparent !important;
+    color: var(--text-muted) !important;
+    border: 1px solid var(--colore-bordo) !important;
+}
+
+.gsc-cancel:hover {
+    background-color: #f0e6d8 !important; /* Beige chiaro al passaggio */
+}
+
+/* 6. IL CONTENUTO DEI COMMENTI */
+/* Testo del commento */
+.gsc-comment-content p {
+    color: #555 !important;
+    font-family: var(--font-family) !important;
+}
+
+/* 7. LE REAZIONI (Like/Dislike) */
+.gsc-reactions {
+    border-bottom: 1px solid var(--colore-bordo) !important;
+    padding-bottom: 15px !important;
+    margin-bottom: 20px !important;
+}
+
+.gsc-reaction:hover {
+    background-color: rgba(193, 154, 107, 0.05) !important; /* Sfondo caramello molto leggero */
+}
+
+/* =========================================
    Responsive per pagina articolo
    ========================================= */
 
