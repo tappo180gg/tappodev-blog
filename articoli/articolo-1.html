@@ -3,6 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy"
+          content="default-src 'self';
+                  script-src 'self' 'unsafe-inline' https://qiscus.app https://giscus.app.bot;
+                  style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;
+                  connect-src 'self' https://qiscus.app;
+                  img-src 'self' data: https://images.unsplash.com https://fastly.picsum.photos;">
     <link rel="stylesheet" href="style-art.css">
     <link rel="stylesheet" href="../style.css">
     <title>Articolo</title>
@@ -81,6 +87,26 @@
             </div>
         <article/>
     </main>
+
+        <!-- SEZIONE COMMENTI -->
+    <div class="comments-section">
+        <h3>Commenti</h3>
+<script src="https://giscus.app/client.js"
+        data-repo="tappo180gg/cairadev-blog"
+        data-repo-id="R_kgDOSAdZRQ"
+        data-category="General"
+        data-category-id="DIC_kwDOSAdZRc4C6rjD"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="top"
+        data-theme="light"
+        data-lang="it"
+        crossorigin="anonymous"
+        async>
+</script>
+    </div>
 
         <!-- SCRIPT INDICE (Inserito direttamente qui per debug) -->
     <script>
