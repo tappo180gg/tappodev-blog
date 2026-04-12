@@ -1,0 +1,445 @@
+/* =========================================
+   STILE PAGINA ARTICOLO SINGOLO (COMPLETO)
+   ========================================= */
+
+/* Contenitore che centra l'articolo */
+.articolo-full {
+    background-color: #ffffff;
+    border-radius: 24px;
+    padding: 40px;
+    box-shadow: 0 10px 30px rgba(74, 64, 54, 0.06);
+    
+    /* Centra l'articolo nella pagina */
+    max-width: 800px; 
+    margin: 0 auto; 
+    width: 100%;
+}
+
+/* Immagine grande arrotondata */
+.img-copertina {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 20px;
+    margin-bottom: 30px;
+}
+
+/* Data piccola sopra il titolo */
+.data-pubblicazione {
+    color: var(--colore-principale);
+    font-weight: 700;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* Titolo Grande H1 */
+.articolo-full h1 {
+    color: var(--text-color);
+    font-size: 2.5rem;
+    margin: 0 0 30px 0;
+    line-height: 1.2;
+}
+
+/* --- TIPOGRAFIA BASE --- */
+.contenuto-testo {
+    font-size: 1.1rem; /* Base font size */
+    line-height: 1.8;
+    color: #444;
+}
+
+/* Paragrafi */
+.contenuto-testo p {
+    margin-bottom: 25px;
+}
+
+/* Sottotitoli H2 */
+.contenuto-testo h2 {
+    color: var(--text-color);
+    margin-top: 50px; /* Più spazio sopra per separare i paragrafi */
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+/* Sottotitoli H3 (se ne usi) */
+.contenuto-testo h3 {
+    color: var(--text-color);
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+/* --- STILI SPECIALI (Code, Link, Liste) --- */
+
+/* 1. Codice Inline (es. <code>variabile</code>) */
+.contenuto-testo code {
+    background-color: #F0E6D8; /* Beige scuro per contrasto */
+    color: #c7254e; /* Rosso scuro/marrone per il codice */
+    padding: 3px 6px;
+    border-radius: 6px;
+    font-family: 'Courier New', Courier, monospace; /* Font a spaziatura fissa */
+    font-size: 0.9em;
+}
+
+/* 2. Blocco di Codice (es. <pre><code>...</code></pre>) */
+.contenuto-testo pre {
+    background-color: #282c34; /* Sfondo scuro "editor" */
+    color: #abb2bf; /* Testo chiaro */
+    padding: 20px;
+    border-radius: 12px;
+    overflow-x: auto; /* Permette lo scorrimento orizzontale se il codice è lungo */
+    margin: 25px 0;
+    box-shadow: inset 0 2px 10px rgba(0,0,0,0.2);
+}
+
+/* Resetta lo stile del codice dentro il pre */
+.contenuto-testo pre code {
+    background-color: transparent;
+    color: inherit;
+    padding: 0;
+    font-size: 0.95rem;
+}
+
+/* 3. Link nel testo */
+.contenuto-testo a {
+    color: var(--colore-principale); /* Caramello */
+    text-decoration: underline;
+    text-underline-offset: 4px; /* Sposta la linea verso il basso per eleganza */
+    transition: all 0.2s;
+}
+
+.contenuto-testo a:hover {
+    background-color: rgba(193, 154, 107, 0.1); /* Sfondo caramello molto chiaro */
+    color: #b08d55; /* Scurenze leggermente */
+    text-decoration: none;
+}
+
+/* 4. Liste (Punti elenco) */
+.contenuto-testo ul, .contenuto-testo ol {
+    margin-bottom: 25px;
+    padding-left: 20px;
+}
+
+.contenuto-testo li {
+    margin-bottom: 10px;
+    padding-left: 10px;
+}
+
+/* Stile personalizzato per i pallini (UL) */
+.contenuto-testo ul li::marker {
+    color: var(--colore-principale); /* Pallino caramello */
+    font-size: 1.2em;
+}
+
+/* 5. Grassetto e Corsivo */
+.contenuto-testo strong {
+    color: var(--text-color); /* Assicura che sia ben leggibile */
+    font-weight: 700;
+}
+
+.contenuto-testo em {
+    color: var(--text-color);
+    font-style: italic;
+}
+
+/* 6. Linea Orizzontale (<hr>) */
+.contenuto-testo hr {
+    border: 0;
+    height: 2px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), var(--colore-bordo), rgba(0, 0, 0, 0));
+    margin: 40px 0;
+}
+
+/* 7. Citazioni (Blockquote) - Il tuo codice precedente, migliorato */
+.contenuto-testo blockquote {
+    background-color: #F9F7F2; /* Vanilla chiarissimo */
+    border-left: 5px solid var(--colore-principale);
+    padding: 20px 25px;
+    margin: 30px 0;
+    border-radius: 0 12px 12px 0;
+    font-style: italic;
+    font-size: 1.2rem;
+    color: var(--text-color);
+    position: relative;
+}
+
+/* --- BOTTONE TORNA INDIETRO --- */
+.btn-torna-indietro {
+    display: inline-block;
+    margin-top: 50px;
+    padding: 12px 30px;
+    background-color: var(--text-color);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.btn-torna-indietro:hover {
+    background-color: var(--colore-principale);
+    transform: translateX(-5px);
+    box-shadow: 0 5px 15px rgba(193, 154, 107, 0.3);
+}
+/* --- TASTI TASTIERA --- */
+.contenuto-testo kbd {
+    background-color: #ffffff;
+    border: 1px solid #d1d5db;
+    border-bottom: 3px solid #d1d5db; /* Effetto 3D in basso */
+    border-radius: 6px;
+    padding: 2px 6px;
+    font-family: monospace;
+    font-size: 0.9em;
+    color: #374151;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+    display: inline-block;
+    margin: 0 2px;
+}
+
+/* --- BOX NOTA / SUGGERIMENTO --- */
+.contenuto-testo .callout {
+    background-color: #FFF8E1; /* Giallo molto pallido (Vanilla Sunny) */
+    border-left: 5px solid #FFC107; /* Colore avviso/giallo */
+    padding: 15px 20px;
+    margin: 25px 0;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    display: flex; /* Per allineare icona e testo */
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.callout-icon {
+    font-size: 1.2rem;
+}
+
+/* --- IMMAGINI CON DIDASCALIA --- */
+.contenuto-testo figure {
+    margin: 30px 0;
+    text-align: center; /* Centra l'immagine */
+}
+
+.contenuto-testo figure img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    display: block;
+    margin: 0 auto; /* Centra orizzontalmente */
+}
+
+.contenuto-testo figcaption {
+    margin-top: 10px;
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    font-style: italic;
+}
+
+/* --- TABELLE PULITE --- */
+.contenuto-testo table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.95rem;
+    border-radius: 8px;
+    overflow: hidden; /* Per i bordi arrotondati */
+}
+
+.contenuto-testo th, 
+.contenuto-testo td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid var(--colore-bordo);
+}
+
+.contenuto-testo th {
+    background-color: #F9F7F2; /* Vanilla chiaro */
+    color: var(--text-color);
+    font-weight: 700;
+}
+
+.contenuto-testo tr:hover {
+    background-color: #fafafa; /* Effetto hover sulla riga */
+}
+
+/* --- MIGLIORAMENTO CORSIVO --- */
+.contenuto-testo em, 
+.contenuto-testo i {
+    font-style: italic;
+    font-weight: 500; /* TRUCCO: Lo rende un po' più "corposo" e leggibile */
+    color: var(--text-muted); /* Usa il grigio/marrone chiaro invece del nero scuro */
+}
+
+/* =========================================
+   STILE INDICE (TOC)
+   ========================================= */
+
+.toc-container {
+    background-color: #F9F7F2; /* Vanilla chiarissimo */
+    border: 1px solid var(--colore-bordo);
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 40px;
+}
+
+.toc-container h4 {
+    margin: 0 0 15px 0;
+    color: var(--text-color);
+    font-size: 1.1rem;
+    border-bottom: 2px solid var(--colore-bordo);
+    padding-bottom: 10px;
+}
+
+#toc-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#toc-list li {
+    margin-bottom: 8px;
+}
+
+#toc-list a {
+    display: block;
+    color: var(--text-muted);
+    text-decoration: none;
+    font-size: 0.95rem;
+    padding: 4px 8px;
+    border-radius: 6px;
+    transition: all 0.2s;
+}
+
+/* Sfondo al passaggio del mouse */
+#toc-list a:hover {
+    background-color: rgba(193, 154, 107, 0.1);
+    color: var(--text-color);
+    padding-left: 12px; /* Leggero movimento a destra */
+}
+
+/* Stile Sottotitoli (H3 nell'indice) */
+.toc-h3 a {
+    padding-left: 25px; /* Rientro per mostrare gerarchia */
+    font-size: 0.9rem;
+    opacity: 0.85;
+}
+
+.toc-h3 a:hover {
+    padding-left: 30px;
+}
+
+/* Messaggio se non ci sono indici */
+.no-index-msg {
+    color: var(--text-muted);
+    font-style: italic;
+    padding: 10px;
+    text-align: center;
+    border: 1px dashed var(--colore-bordo);
+    border-radius: 8px;
+    background-color: rgba(0,0,0,0.02);
+}
+
+/* =========================================
+   SPAZIO AUTORE (Colorato: Caramello & Vaniglia)
+   ========================================= */
+
+.author-space {
+    background-color: #FFF8E1; /* Vaniglia Sunny (Giallo chiarissimo) */
+    border-left: 5px solid #C19A6B; /* Bordo Caramello */
+    border-radius: 0 12px 12px 0; /* Arrotondato solo a destra */
+    padding: 20px 25px;
+    margin: 30px 0; /* Spazio sopra e sotto per staccarlo dal testo */
+    
+    display: flex;
+    align-items: flex-start; /* Allinea icona e testo in alto */
+    gap: 15px;
+    
+    /* Opzionale: Sfumatura colorata sul testo */
+    color: #5D4037; /* Marrone scuro caldo */
+    position: relative;
+}
+
+/* Icona o Emoji */
+.author-icon {
+    font-size: 1.5rem;
+    background-color: #fff;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 5px rgba(193, 154, 107, 0.2);
+    flex-shrink: 0;
+}
+
+/* Titolo del pensiero */
+.author-space h4 {
+    margin: 0 0 5px 0;
+    color: #C19A6B; /* Caramello */
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Testo del pensiero */
+.author-space p {
+    margin: 0;
+    font-style: italic; /* Corsivo per sembrare un pensiero */
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+/* =========================================
+   Responsive per pagina articolo
+   ========================================= */
+
+/* Mantiene l'immagine di copertina fluida su schermi piccoli */
+@media (max-width: 900px) {
+    .img-copertina {
+        height: auto; /* Evita altezza fissa */
+        max-height: 60vh;
+    }
+
+    .articolo-full {
+        padding: 30px;
+        margin: 20px; /* Spazio sui lati su schermi stretti */
+    }
+
+    .articolo-full h1 {
+        font-size: 2rem;
+    }
+
+    .contenuto-testo {
+        font-size: 1rem;
+        line-height: 1.7;
+    }
+}
+
+@media (max-width: 600px) {
+    .img-copertina {
+        height: auto;
+        max-height: 45vh;
+        border-radius: 12px;
+        margin-bottom: 20px;
+    }
+
+    .articolo-full {
+        padding: 20px;
+        border-radius: 16px;
+    }
+
+    .articolo-full h1 {
+        font-size: 1.6rem;
+    }
+
+    .contenuto-testo {
+        font-size: 0.98rem;
+        line-height: 1.6;
+    }
+}
