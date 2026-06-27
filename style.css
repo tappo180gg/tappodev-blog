@@ -879,8 +879,8 @@ footer a:hover {
     .social-links-row {
         flex-direction: column; /* Uno sopra l'altro */
         width: 100%;
-    }
-
+    }  
+    
     .social-pill, 
     .instagram-btn {
         width: 100%; /* Occupano tutta la larghezza */
